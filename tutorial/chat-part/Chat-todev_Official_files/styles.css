@@ -1,0 +1,1787 @@
+
+/* Reset de margens e preenchimentos para evitar estilos padrão do navegador */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ECF0F1;
+    color: #333;
+}
+
+textarea {
+    resize: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: #007bff;
+}
+
+.lnk-a, .pdescThr, .pdesc b{
+    color: black;
+}
+
+pre {
+    background-color:  #1E1E1E; /* #f4f4f4;   Cor de fundo desejada */
+    border-radius: 5px; /* Borda arredondada (opcional) */
+    overflow: scroll;
+    padding: 10px;
+}
+
+code{
+    background-color: #eeeeee;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: small;
+}
+
+code.hljs{
+    background-color: #1E1E1E;
+    color: white;
+    font-size: 1rem;
+}
+
+blockquote {
+    background-color: #f9f9f9;
+    border-left: 5px solid #ccc;
+    margin: 1.5em 0;
+    padding: 0.5em 1em;
+  }
+
+
+.hljs-keyword { color: #64B5F6; } /* Palavras reservadas em azul */
+.hljs-function { color: #4DD0E1; } /* Funções */
+.hljs-variable { color: #FFD740; } /* Variáveis */
+.hljs-string,
+.hljs-attr { color: #FFB74D; } /* Strings e Atributos HTML */
+.hljs-boolean { color: #69F0AE; } /* Booleanos */
+.hljs-comment { color: #BDBDBD; } /* Comentários */
+.hljs-tag,
+.hljs-name,
+.hljs-meta,
+.hljs-tag .hljs-name,
+.hljs-tag .hljs-attr { color: #FF6600 !important; } /* Tags HTML */
+.hljs-built_in { color: #00E676; } /* Tags HTML incorporadas */
+.hljs-string {
+    color: greenyellow !important;
+  }
+
+
+.top-app{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.appname{
+    height: 35px;
+    color: white;
+}
+
+.appname h3{
+    margin-top: 8px;
+}
+
+.logo-appname{
+    width: 160px;
+    display: flex;
+}
+
+/*.logo-appname img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}*/
+
+.logaa {
+    width: 160px;
+    height: 30px;
+}
+
+.logbb {
+    display: none;
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.search{
+    width: 80px;
+    height: 30px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;/* depois alterar para  justify-content: space-between; quando tiver a opcao search ativado*/
+}
+
+.top-icn{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.login-menu{
+    width: 200px;
+    display: flex;
+    justify-content:space-between;
+    margin-right: -5px;
+}
+
+.btn-login{
+    width: 100px;
+    height: 33px;
+    padding-top: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: #2ECC71;
+    text-align: center;
+    cursor: pointer;
+}
+
+.clkBtn{
+    background-color: #474747;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.menuPic-usr, .expand-menu{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+
+.menu-sttng{
+    width: 150px;
+    padding: 8px;
+    position: absolute;
+    margin-top: 43px;
+    margin-left: 35px;
+    border-radius: 5px;
+    box-shadow: 0 15px 35px hsla(0, 0%, 20%, 0.3);
+    background-color: white;
+    display: none;
+}
+
+.logout{
+    color: #E74C3C;
+}
+
+.menu-sttng li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+
+.app-body{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+.nav-left{
+    width: 18%;
+    height: 300px;
+    padding: 5px;
+    margin-top: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 18%;
+}
+
+.nav-right{
+    width: 25%;
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+.div-child, .lastPosts{
+    width: 95%;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    background-color: white;
+    font-family: Hack, monospace;
+    margin-bottom: 5px;
+}
+
+.homeBtn{
+    display: flex;
+}
+
+.txtHome{
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: larger;
+}
+
+.homeIcon{
+    width: 30px;
+    height: 30px;
+}
+
+.homeIcon img{
+    width: 100%;
+    height: 100%;
+}
+
+.createCht{
+    padding: 5px;
+    display: flex;
+    background-color: #007bff;
+    color: white;
+    margin-top: 20px;
+    width: 130px;
+    border-radius: 4px;
+}
+
+.createCht b{
+    margin-top: 6px;
+    margin-left: 4px;
+}
+
+.addCht{
+    width: 30px;
+    height: 30px;
+}
+
+.chats{
+    width: 55%;
+}
+
+.chat-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.nav-back, .aling-content{
+    display: flex;
+    cursor: pointer;
+}
+
+.squrs{
+    display: block;
+}
+
+.btnBack, .btnAlign{
+    width: 35px;
+    height: 35px;
+}
+
+.btnBack img, .btnAlign img{
+    width: 100%;
+    height: 100%;
+}
+
+.linkBck{
+    margin-left: 5px;
+    font-size: larger;
+    margin-top: 6px;
+}
+
+.part-user{
+    width: 25px;
+    height: 25px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+.part-user img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.partcip{
+    position: absolute;
+    margin-left: 160px;
+    margin-top: -23px;
+}
+
+.part-user{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.rooms{
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 13px;
+    background-color: white;
+    font-size: 1.3rem;
+    height: auto; /* Define a altura da div para se ajustar automaticamente ao conteúdo */
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+.separ {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.bdRoom p{
+    font-family: Hack, monospace;
+}
+
+.rooms:hover{
+    border: 1px solid #2ECC71;
+}
+
+.rooms p{
+    color: #373B41;
+    margin-top: 15px;
+}
+
+.mentoo{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+.status{
+    width: 45px;
+    height: 18px;
+    padding: 2px;
+    text-align: center;
+    font-size: 0.80rem;
+    float: right;
+    font-weight: bold;
+    background-color: #eaffea;
+    color: #2ECC71;
+    border-radius: 60%;
+}
+
+.head-room{
+    display: flex;
+    justify-content:space-between;
+}
+
+.head-room img {
+    width: 100%;
+    height: 100%;
+}
+
+.catgChatr{
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    margin-left: auto;
+    border-radius: 25px;
+    font-size: 0.98rem;
+    background-color:#373B41;
+    color: white;
+}
+
+.numroomuser{
+    color: gray;
+    font-size: 1rem;
+}
+
+.msg-display{
+    padding: 5px;
+    height: 65vh;
+    overflow: scroll;
+    background-image: url('../img/chatwalkpaper.jpg');
+    background-color: #d1ffbd;
+}
+
+.chatd:hover{
+    border: 1px solid lightgray;
+}
+
+.top-cht{
+    justify-content: end;
+}
+
+.cht-input-text{
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #ECF0F1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.message{
+    width: 38vw;
+    padding: 6px;
+    border: none;
+    background-color: #ECF0F1;
+    outline: none;
+}
+
+.anexos-icns{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-top: 50%;
+}
+
+.lbll{
+    width: 35px;
+    height: 35px;
+}
+
+.anexos-icns img{
+    width: 100%;
+    height: 100%;
+}
+
+.usr-name{
+    font-size: 1rem;
+    display: flex;
+}
+
+.usr-name span{
+    margin-top: 4px;
+    margin-right: 5px;
+    color: #373B41;
+}
+
+.handshack{
+    margin-right: 3px;
+    width: 20px;
+    height: 35px;
+}
+
+.imgVote{
+    width: 100%;
+    height: 60%;
+}
+
+.tnd {
+    width: 60%;
+    height: 60%;
+    margin-right: 3px;
+}
+
+.imgVote img{
+    width: 100%;
+    height: 100%;
+}
+
+.time-post{
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 66px;
+    color: gray;
+    font-size: 0.90rem;
+}
+
+.pic-profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.pic-profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.pictrends{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+.pictrends img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.pdesc, .pdescThr{
+    margin-top: 10px;
+}
+
+.comments{
+    display: flex;
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: end;
+}
+
+.comments span{
+    font-size: small;
+    margin-top: 3px;
+    color: gray;
+}
+
+.cmmtIcon{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.chooseColor{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.blckPic{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.usrPart{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #dafeda;
+}
+
+.idUsr{
+    display: flex;
+}
+
+.chkboxDv span{
+    color: #E74C3C;
+    font-size: 1rem;
+}
+
+.idUsr span{
+    margin-top: 4px;
+    margin-left: 4px;
+    font-size: 1rem;
+}
+
+.save{
+    padding: 8px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2ECC71;
+    color: white;
+}
+
+.insetMod{
+    width: 97%;
+    padding: 6px;
+}
+
+.all-comments{
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.spCommts {
+    border-top: 1px solid lightgray;
+    margin-top: 30px;
+    padding-top: 3px;
+    font-size: medium;
+}
+
+.comment-here{
+    width: 98%;
+    height: 100px;
+    margin-top: 8px;
+}
+
+.id-comment{
+    display: flex;
+    align-items: center;
+}
+
+.id-comment span{
+    font-size: 1rem;
+    margin-top: -5px; 
+    color: #2ECC71;
+    border-radius: 10%;
+    background-color: #eaffea;
+    padding: 3px;
+}
+
+.all-comments p{
+    margin: 0;
+    margin-top: 0px;
+    margin-left: 13px;
+}
+
+.pic-comment{
+    width: 20px; height: 20px;
+    margin-right: 5px; border-radius: 50%;
+}
+
+.post-area{
+    width: 98%;
+}
+
+.pst-page{
+    width: 61%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.pstField{
+    width: 100%;
+    padding: 5px;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    border: 1px solid gray;
+    background-color: #ECF0F1;
+    border-radius: 5px;
+}
+
+.pstTxt{
+    padding: 5px; 
+    background-color: #ECF0F1;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+.btnPost{
+    width: 130px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #2ECC71;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nameCatg{
+    display: flex;
+    justify-content: space-between;
+    width: 102%;
+    margin-bottom: 10px;
+}
+
+.nmcht{
+    width: 50%;
+}
+
+.rmdesc{
+    height: 100px;
+    font-size: 1rem;
+}
+
+.chartsDesc, .chartsRules{
+    display: flex;
+    justify-content: end;
+}
+
+.id-profilePic{
+    margin: 0 auto;
+}
+
+.prof{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #dafeda;
+    margin: 0 auto;
+}
+
+.prof img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.nameProf{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.usrInf{
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    padding-top: 8px;
+    border-top: 1px solid lightgray;
+}
+
+.postsHe{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.postsHe span{
+    color: gray;
+    margin: 5px;
+}
+
+.inpt-class{
+    padding: 6px;
+    margin: 5px;
+    width: 200px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.fieldname{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.out{
+    background-color: white;
+    border-top: 1px solid gray;
+    border-radius: 0px;
+}
+
+.idBoil{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.chatFoto{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.idBoil b{
+    margin-left: 3px;
+    font-size:medium;
+    font-weight: unset;
+}
+
+.msgText{
+    font-size: 0.90rem;
+    max-width: 350px;
+    margin-left: 30px;
+    height: auto;
+    display: inline-block;
+    padding: 4px;
+    background-color: #fff7c7;
+    border-radius: 10px;
+    font-family: Hack, monospace;
+}
+
+.mediaTxt, .txtMdia{
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border: none;
+    background-color: white;
+}
+
+.mediaTxt img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.txtMdia {
+    width: 90px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.txtMdia img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.loginBtn{
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 6px;
+    cursor: pointer;
+    color: white;
+    background-color: #007bff;
+}
+
+.writeP{
+    padding: 10px;
+    display: flex;
+}
+
+.writeP b{
+    margin-top: 4px;
+    font-size: large;
+}
+
+.wrtImg{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.notComment{
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #e4f6f8;
+    font-size:small;
+}
+
+.settin-post{
+    width: 30px;
+    height: 30px;
+}
+
+.lbUpload{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: -43px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.lbUpload img{
+    width: 100%;
+    height: 100%;
+}
+
+.btnLoaded{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: -3px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.btnLoaded img{
+    width: 100%;
+    height: 100%;
+}
+
+/*#loaded, #imgpf {
+    display: none;
+}*/
+
+#imgpf {
+    display: none;
+}
+
+.prof-posts-user{
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.policy{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.90rem;
+    color: #333;
+}
+
+.policy a{
+    color: #007bff;
+}
+
+.notfSession{
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+.headNot{
+    display: flex;
+}
+
+.headNot b{
+    margin-left: 5px;
+    margin-top: 1px;
+}
+
+.imgNotfUser{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.sinal{
+    width: 10px;
+    height: 10px;
+    background-color: #E74C3C;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 66px;
+}
+
+.toggleExpand{
+    border-radius: 5px;
+    width: 150px;
+    position: absolute;
+    right: 30%;
+    padding: 8px;
+    background-color: white;
+    box-shadow: 0 15px 35px hsla(0, 0%, 20%, 0.3);
+    display: none;
+    z-index: 10;
+}
+
+
+.exp-options{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.exp-options span{
+    margin-top: 0px;
+}
+
+.icn-edit{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.listass{
+    margin: 15px;
+    padding-left: 18px;
+ }
+
+ .listass li{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+ }
+
+.listass a{
+    font-size:smaller;
+    font-weight: bold;
+    color: #373B41;
+ }
+
+ .listass a:hover{
+    color: #2ECC71;
+ }
+
+ .create{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+ }
+
+
+ .icnMnenus {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+ }
+
+ .icnMnenus img{
+    width: 100%;
+    height: 100%;
+ }
+
+ .menu-sttng a{
+    margin-left: 25px;
+ }
+
+ .editcmm {
+    padding: 0;
+    font-size: .85rem;
+    width: 90px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1px;
+    margin-left: 18px;
+ }
+
+ .editcmm li {
+    display: inline-block;
+    color: gray;
+ }
+
+ .editcmm a{
+    color: gray;
+ }
+
+ .txtEditC{
+    width: 100%;
+    height: 150px;
+ }
+
+ .savecmmnt{
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+ }
+
+ .edtop, .txtop{
+    background-color: white;
+    border: none;
+    outline: none;
+ }
+
+ .edtop{
+    font-weight: bold;
+    font-size: 1.2rem;
+ }
+
+ .txtop{
+    height: 350px;
+ }
+
+ .edtop::placeholder{
+    font-size: 2.4rem;
+    font-weight: bold;
+ }
+
+ .txtop::placeholder{
+    font-size: 0.90rem;
+ }
+
+ .pagination{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+ }
+
+ .btnPages{
+    border: 1px solid #2ECC71;
+    border-radius: 5px;
+    width: 110px;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 8px;
+ }
+
+ .btnPages:hover {
+    color: white;
+    background-color:#2ECC71;
+ }
+
+ .chtBtn {
+    color: #007bff;
+    margin-right: 8px;
+    text-decoration: underline;
+    font-size: 1.2rem;
+ }
+
+ .orsig{
+    border-top: 1px solid lightgray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+ .order{
+    margin-top: 10px;
+ }
+ .order:hover{
+    color: blue;
+    text-decoration: underline;
+ }
+
+ .search-content{
+    width: 50%;
+ }
+
+ .searchFrm{
+    width: 99%;
+    height: 4vh;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 0.90rem;
+ }
+
+ .pagination a {
+    color: #333;
+ }
+
+ .destaque {
+    background-color: yellow;
+ }
+
+ .insert-email{
+    border-top: 1px solid lightgray;
+    padding-top: 8px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+ }
+
+.insert-e{
+    width: 60%;
+    padding: 6px;
+    margin-top: 8px;
+}
+
+.guide-mail{
+    font-size: 0.93rem;
+    color: gray;
+}
+
+.recoverp {
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+.respost {
+    background-color: #ededed;
+    color: #636363;
+    padding: 8px;
+    font-size: small;
+}
+
+.replyField{
+    border-left: 4px solid gold; 
+}
+
+.qualific{
+    display: flex;
+    justify-content:left;
+}
+
+.thrends {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 38px;
+    height: 40px;
+    color: gray;
+    font-size: 1rem;
+    margin-left: 10px; margin-right: 25px;
+}
+
+.threndTim{
+    margin-left: 29px;
+    margin-top: 20px;
+    font-size: small;
+}
+
+.threndSquare{
+    display: flex;
+}
+
+.imgThrendsDay {
+    width: 180px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.imgThrendsDay img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.groupThrend-vote{
+    width: 75%;
+    margin-left: 8px;
+}
+
+.resThrend {
+    border-radius: 8px;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    background-color: #BDBDBD;
+}
+
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.imgNum{
+    border: 1px solid white;
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 17px;
+    color :white;
+    margin: 8px
+}
+
+.uplIcn{
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trendContent{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.imgtClass{
+    cursor: pointer;
+}
+
+.trenTxt{
+    border: 1px solid lightgray;
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 40px;
+    padding:unset;
+    padding-left: 5px;
+    font-size: 1rem;
+}
+
+.edtop::placeholder{
+    font-size: 1rem;
+    font-weight: none;
+ }
+
+ .inf_submit{
+    width: 54%;
+    margin: 0 auto;
+    margin-top: 5px;
+    color: gray;
+ }
+
+ .texto {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+ }
+
+ .texto::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.2em;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+ }
+
+ .texto.expandido::after {
+    /* Estilos diferentes quando o texto está expandido */
+    display: none; /* Esconde o pseudoelemento quando o texto está expandido */
+}
+
+ .expt {
+    cursor: pointer;
+ }
+
+ .edMsgs a{
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    /*color: #9c9c9c;*/
+    color: black;
+    border-radius: 20px;
+    padding: 3px;
+ }
+
+ .trndIndex {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+
+ }
+
+ .indexImgTrnds{
+    border-radius: 5px;
+    width: 190px;
+    height: 200px;
+    margin: 5px;
+ }
+
+ .indexImgTrnds img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+ }
+
+ .titleIndexT {
+   position: relative;
+   font-size: 0.90rem;
+   margin-top: -45px;
+   height: auto;
+   color: white;
+   text-shadow: 3px 3px 4px #444;
+   padding: 5px;
+ }
+
+ .linkt {
+    display: flex;
+ }
+
+ .linkTitile {
+    color: black;
+ }
+
+ .linkTitile:hover {
+    color: green;
+ }
+
+ .linkChatDv {
+    width: 40px;
+    height: 40px;
+    margin-top: 25px;
+    padding: 3px;
+ }
+
+ .fleDel{
+    width: 50px;
+    margin-left: 35px;
+    margin-top: -10px;
+ }
+
+ .fleDel a{
+    font-weight: bold;
+    font-size: 13px;
+    color: #434343;
+ }
+
+ .rplyzone {
+    margin-left: 15px;
+    border-left: 1px solid lightgray;
+    padding-left: 4px;
+ }
+
+ .zoneComm {
+    border-left: 1px solid lightgray;
+    padding-left: 4px;
+ }
+
+ code {
+    color: black;
+    /*background-color: #2ECC71;*/
+ }
+
+ .lightOn {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00E676;
+    margin-left: 15px;
+    margin-top: 17px;
+ }
+
+ .nowOn{
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 40px;
+    font-size: small;
+ }
+
+ .baseUrl {
+    position: absolute;
+    font-size: medium;
+    color: gray;
+ }
+
+ .ponto {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00E676;
+    float: left;
+    margin-top: 2px;
+    margin-right: 3px;
+ }
+
+ .user-name {
+    margin-right: 3px; /* Espaçamento entre o nome e as horas */
+}
+
+.text-container {
+    display: flex;
+    align-items: center; /* Garante que user-name e horas estejam alinhados */
+}
+
+.horas {
+    background-color: white;
+    color: gray;
+    font-size: small;
+}
+
+/* NOVO BLOCO DE NEW */
+.new-blocks {
+    display: flex;
+}
+
+.grupoImg {
+    border-right: 1px solid lightgray;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nwImgBk {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.nwImgBk img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.id-and-datas {
+    margin-left: 10px;
+}
+
+.nmNw {
+    color: #474747;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.datenw {
+    color: gray;
+    font-size: small;
+    margin-left: 4px;
+}
+
+.ttlePost h3{
+    color: black;
+}
+
+.reaction-block {
+    display: flex;
+}
+
+.reacts img{ 
+    width: 20px;
+    height: 20px;
+}
+
+.reacts{
+    margin-top: 8px;
+    display: flex;
+    margin-right: 50px;
+    font-size: small;
+    color: gray;
+}
+
+.sndAnexos {
+    display: flex;
+}
+
+.tmMsg {
+    font-size: small;
+    color: brown;
+    margin-top: 7px;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+#notfound {
+    width: 100%;
+    height: 55vh;
+}
+
+#notfound img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos padrão para todos os dispositivos */
+
+/* Estilos para PC e telas grandes */
+@media screen and (min-width: 1200px) {
+    /* Seus estilos CSS para PCs e telas grandes aqui */
+    .pst-page{
+        width: 61%;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        background-color: white;
+    }
+}
+  
+
+/* Estilos para tablets */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    /* Seus estilos CSS para tablets aqui */
+    .indexImgTrnds{
+        width: 155px;
+        height: 180px;
+     }
+    .app-body{
+        width: 96%;
+    }
+
+    .searchFrm{
+        font-size: large;
+        padding: 3px;
+     }
+
+    .nav-left{
+        width: 7%;
+    }
+    .txtHome{
+        display: none;
+    }
+    .createCht{
+        width: 30px;
+    }
+    
+    .createCht b{
+       display: none;
+    }
+    .homeIcon{
+        width: 40px;
+        height: 40px;
+    }
+    .chats{
+        width: 63%;
+    }
+
+    .prof-posts-user{
+        width: 62.5%;
+    }
+    .msg-display{
+        height: 50vh;
+        overflow: scroll;
+    }
+    .toggleExpand{
+        right: 32%;
+    }
+    .message{
+        width: 40vw;
+        font-size: 0.90rem;
+    }
+
+    .nav-right{
+        display: block;
+        width: 30%;
+    }
+
+    /*.nav-right{
+        display: none;
+    }
+
+    .app-body, .chats, .pst-page, .prof-posts-user{
+        width: 80%;
+    }*/
+
+    .menu-sttng{
+        margin-left: 34px;
+    }
+    
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para tablets em modo paisagem */
+    .comments{
+        margin-right: 0;
+    }
+    .nav-right{
+        display: none;
+    }
+    .app-body, .chats, .pst-page{
+        width: 88%;
+    }
+    .prof-posts-user {
+        width: 83%;
+    }
+  }
+  
+
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 767px) {
+    /* Seus estilos CSS para dispositivos móveis aqui */
+    .titleIndexT {
+        margin-top: -65px;
+      }
+    .indexImgTrnds{
+        border-radius: 5px;
+        width: 110px;
+        height: 100px;
+        margin: 5px;
+     }
+    .inf_submit{
+        width: 95%;
+    }
+    .appname{
+        display: none;
+    }
+    .searchFrm{
+        font-size: larger;
+        height: 4vh;
+        padding: 4px;
+     }
+    .search-content{
+        width: 44%;
+        position: absolute;
+        margin-left: 47px;
+     }
+    .btn-login{
+        width: 80px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .login-menu{
+        width: 140px;
+        margin-right: -3px;
+    }
+    .nav-back, .order{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .linkBck{
+        font-size:larger;
+    }
+    .nav-left, .nav-right{
+        display: none;
+    }
+    .app-body, .chats, .pst-page, .prof-posts-user{
+        width: 100%;
+    }
+    .menu-sttng{
+        width: 140px;
+        margin-left: -20px;
+        z-index: 1;
+    }
+    .top-app{
+        padding: 5px;
+    }
+    .toggleExpand{
+        right: 3%;
+    }
+    .message{
+        width: 65vw;
+        font-size: 0.90rem;
+    }
+    .status{
+        display: none;
+    }
+    .insert-email{
+        width: 90%;
+     }
+     .guide-mail{
+        font-size: 0.80rem;
+    }
+    .imgThrendsDay {
+        width: 100px;
+        height: 80px;
+    }
+
+    .pdescThr {
+        margin-top: -8px;
+    }
+
+    .pdescThr b, .ttlePost h3 {
+        font-size: smaller;
+    }
+
+    .trdIdp, .time-post, .logaa{
+        display: none;
+    }
+
+    .comments{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .pstMob, .logbb {
+        display: block;
+    }
+
+    .logbb{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Estilos para TVs e telas maiores */
+@media screen and (min-width: 1920px) {
+    /* Seus estilos CSS para TVs e telas maiores aqui */
+    .nav-left{
+        top: 10%;
+    }
+    .pst-page{
+        width: 62.1%;
+    }
+}
+
