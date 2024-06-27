@@ -147,6 +147,9 @@
     }
 </script>
 
+<!--
+runs the open close animation
+-->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const notBtn = document.querySelector('.expand-menu');
@@ -168,53 +171,117 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="app-body" style="justify-content: center">
        <div class="loginDiv pst-page">
             <div class="id-profilePic">
-            <b>About Us - Chat-to.dev</b><br><br>
-            <hr>
+            
+<style>
+.collapsible {
+  background-color: #2ecc70;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-bottom: 2%;
+  margin-bottom: 8px;
+}
 
-            <p>Welcome to Chat-to.dev, a vibrant community where 
-programmers of all levels come together to share knowledge, discuss 
-coding, and collaborate on exciting projects. At Chat-to.dev, we believe
- in the power of community-driven learning and aim to provide a alternative platform
- where developers can connect, inspire, and grow.</p>
+.small-collapsible{
+  background-color: #2ecc70;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 30%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-bottom: 2%;
+}
 
-            <br><b>Our Mission</b><br><br>
-<hr>
-            <p>Our mission is to foster a supportive environment for 
-programmers, both beginners and experts, to exchange ideas, seek 
-assistance, and collaborate on coding endeavors. We envision Chat-to.dev
- as a space where the passion for programming is celebrated, and 
-everyone has the opportunity to enhance their skills.</p>
+.active, .collapsible:hover {
+  background-color: #555;
+}
 
-            <br><b>Key Features</b><br><br>
-<hr>
-                <b>Chat Rooms:</b> Create or join chat rooms dedicated 
-to various programming languages, frameworks, or specific topics. Engage
- in real-time discussions and collaborate with your peers. Organiezed by activity, top rooms will appear first. You many also use the search-bar to help find content that interest you.<br>
- 
- 
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
 
-                <b>Code Sharing:</b> Share your code snippets via inline markdown or upload a file for everyone to collaborate on!<br>
-                <b>Editing functionality:</b> Need to change a small bug or fix some syntax? You can edit messages that you have already submitted to the chat. This feature also avaliable for post so you dont need to leave a comment below correcting yourself.<br>
+.active:after {
+  content: "\2212";
+}
 
-                <b>Community-driven Learning:</b> Embrace the spirit of 
-collaboration and community-driven learning. Help others, ask questions,
- and build a network of like-minded individuals.<br>
- <b>Newest trends</b> Do you wana see what all the other developers are talking about? With trends you can post articles with programming relevance once you have contribuited meaningfully to the chat-to.dev ecosystem. Leave comments concerning the trend below letting us know your opinions or your how the new trend affects you. <br>
- <b>Engaging posts:</b> Create post covering tech news, tutorials, or opinions and get feedback from the community. Post that are popular by the community will show first on the hot page.<br><br>
+.content {
+  margin-bottom: 1%;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
 
-            <br><b>Why Choose Chat-to.dev</b><br><br>
-<hr>
-                <b>Inclusive Community:</b> We welcome developers of all
- backgrounds and experience levels. Whether you're just starting or have
- years of experience, you have a place in our community.<br>
+<h2>About us:</h2><br>
 
-                <b>Respectful Environment:</b> We prioritize creating a 
-respectful and inclusive space. Harassment or discrimination are not 
-tolerated as we strive to maintain a positive atmosphere.<br>
 
-                <b>Passionate Moderation:</b> Our moderation team is 
-dedicated to ensuring a positive experience for all users. They actively
- enforce community guidelines to create a safe and engaging environment. For more information about what is permitted please read the <a href="google.com">Terms of use</a>.<br><br>
+<button class="collapsible">Who we are</button>
+<div class="content">
+  <p>Welcome to Chat-to.dev, a vibrant community where programmers of all levels come together to share knowledge, discuss coding, and collaborate on exciting projects. At Chat-to.dev, we believe in the power of community-driven learning and aim to provide a alternative platform where developers can connect, inspire, and grow.</p>
+</div>
+<button class="collapsible">Our Mission</button>
+<div class="content">
+  <p>Our mission is to foster a supportive environment for programmers, both beginners and experts, to exchange ideas, seek assistance, and collaborate on coding endeavors. We envision Chat-to.dev as a space where the passion for programming is celebrated, and everyone has the opportunity to enhance their skills.</p>
+</div>
+<button class="collapsible">Features</button>
+<div class="content">
+<ul>
+    <li class="bold">Chat rooms</li><p>Chats are organized by their language, framework or platform. Find others who share the same interest as you! If a chat in your area of interest is not avaliable please open one. Inactive chat rooms will be removed after a month if there is no demand. Chat owners will be able to regulate content and users in their room that do not follow the rules set by the room creator.</p><hr>
+    <li class="bold">File sharing</li><p>Upload files from your local machine directly to chat to collaborate with others in real time. Share code, wireframes, or other project related content.</p><hr>
+    <li class="bold">MarkDown support</li><p>Chats, Post, & comments all support .md format. Share links, code snippets or format your messages in a organized and readable manner inline.</p><hr>
+    <li class="bold">Edit functionality</li><p>Need to make a quick change or fix some syntax? Use the editing tool to correct already submitted messages post & comments.</p><hr>
+    <li class="bold">Engaging Post</li><p>Wana share instructions or a guide you made? Wana ask a question thats not chat room specific? Got some other long-form content that you want to distribute? Use the post feature. Any content submitted here is able to be viewed by anyone regardless of their chat-toom participation. Newest post will be shown on the hope page!</p><hr>
+    <li class="bold">Hand shakes</li><p>If a post, comment, or trend is helpful or informative, give out a hand shake to share your appreciation and to help promote that content and author.</p><hr>
+    <li class="bold">Karma</li><p>As you participate in the community by creating well liked post, productive comments, and helping others in need, you will accumulate Karma. Once you reach certian thresholds you will unlock more features such as trends. Your Karma shows how helpful you are to others and you should be respected for your contributions.</p><hr>
+    <li class="bold">Newest Trends</li><p>Want to share an article you read or some news you saw. Make a trend! Trends will display images as the main content and will host a link pointing to the article you are sharing. To unlock trends participate in the community and earn Karma. Trends will show on the home page.</p><hr>
+    <li class="bold">Community driven environment</li><p>Everyone here is looking to share or learn. Embrace the spirit of collaboration and engage with others to further everyone! We hope to have you here and grow together. </p><hr>
+<!--
+    <li class="bold">test text</li><p>content of bulliten</p><hr>
+-->
+</ul>
+</div>
+<button class="collapsible">Why choose Chat-to.dev</button>
+<div class="content">
+  <ul>
+    <li class="bold">Inclusive Community</li><p>We welcome developers of all backgrounds and experience levels. Whether you're just starting or have years of experience you have a home here. We are not a language/framework specific fourm, we allow all development related content.</p></li><hr>
+  
+  <li class="bold">Respectful Environment</li><p>We want to maintain a respectful and open space. Harrassment or discrimination are not tolerated as we strive to maintain a positive atmosphere. Our moderation team and chat room owners will enforce community guidelines to ensure a save environment. For more details about what is not permitted please read <a href="https://chat-to.dev/termsofuse">Terms of use.</a></p><hr></li></ul>
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
             <br><b>Connect with Us:</b><br><br>
 

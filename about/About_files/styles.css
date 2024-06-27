@@ -1,3 +1,7 @@
+.bold{
+    font-weight: bold;
+}
+
 /* Reset de margens e preenchimentos para evitar estilos padrão do navegador */
 body, h1, h2, h3, p {
     margin: 0;
