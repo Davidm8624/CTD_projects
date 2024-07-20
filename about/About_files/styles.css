@@ -10,7 +10,7 @@ body, h1, h2, h3, p {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ECF0F1;
+    background-color: #333;
     color: #333;
 }
 
@@ -29,7 +29,7 @@ a{
 }
 
 .lnk-a, .pdescThr, .pdesc b{
-    color: black;
+    color: #333;
 }
 
 pre {
@@ -79,7 +79,7 @@ blockquote {
 
 
 .top-app{
-    background-color: black;
+    background-color: #333;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -91,7 +91,7 @@ blockquote {
 
 .appname{
     height: 35px;
-    color: white;
+    color: #333;
 }
 
 .appname h3{
@@ -408,7 +408,7 @@ blockquote {
 .cht-input-text{
     border-radius: 8px;
     padding: 8px;
-    background-color: #ECF0F1;
+    background-color: #636363;
     display: flex;
     justify-content: space-between;
 }
@@ -1112,9 +1112,11 @@ blockquote {
     height: 4vh;
     padding: 6px;
     border-radius: 8px;
-    border: 1px solid black;
+    border: none;
     outline: none;
     font-size: 0.90rem;
+    color: white;
+    background-color: #636363;
  }
 
  .pagination a {
@@ -1377,7 +1379,7 @@ blockquote {
  }
 
  .linkTitile {
-    color: black;
+    color: #333;
  }
 
  .linkTitile:hover {
@@ -1415,7 +1417,7 @@ blockquote {
  }
 
  code {
-    color: black;
+    color: #333;
     /*background-color: #2ECC71;*/
  }
 
@@ -1542,7 +1544,8 @@ blockquote {
         padding: 20px;
         border: 1px solid lightgray;
         border-radius: 8px;
-        background-color: white;
+        background-color: #333;
+        color: #b8b8b8;
     }
 }
   
