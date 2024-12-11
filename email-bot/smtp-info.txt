@@ -1,0 +1,5 @@
+address: smtp.hostinger.com
+port: 465
+user_name: feedback@chat-to.dev
+password: Feedb4ck$
+domain: chat-to.dev
