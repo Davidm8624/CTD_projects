@@ -1,0 +1,5 @@
+address: smtp.gmail.com
+port: 587
+user_name: (your email)
+password: (your password, or app password if using google)
+domain: gmail.com
