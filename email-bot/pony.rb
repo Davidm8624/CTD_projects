@@ -4,14 +4,14 @@ require 'csv'
 # Read SMTP configuration from smtp-info.txt file
 def read_smtp_config(file_path)
   smtp_config = {}
-  
+
   File.readlines(file_path).each do |line|
-    line.strip!  # Clean up leading/trailing whitespaces
-    next if line.empty?  # Skip empty lines
+    line.strip! # Clean up leading/trailing whitespaces
+    next if line.empty? # Skip empty lines
 
     # Ensure the line contains an '=' to separate the key and value
     if line.include?('=')
-      key, value = line.split('=', 2)  # Split only at the first '='
+      key, value = line.split('=', 2) # Split only at the first '='
 
       # Store the key-value pair, stripping extra spaces
       smtp_config[key.strip.to_sym] = value.strip
@@ -20,7 +20,7 @@ def read_smtp_config(file_path)
       puts "Skipping invalid line in SMTP config: #{line}"
     end
   end
-  
+
   # Ensure required keys are present
   required_keys = [:address, :port, :user_name, :password, :domain]
   missing_keys = required_keys.select { |key| smtp_config[key].nil? }
@@ -36,7 +36,7 @@ end
 # Read email content from content.txt file
 def read_email_content(file_path)
   content = {}
-  
+
   # Read the content.txt file to extract Subject and Body
   File.readlines(file_path).each do |line|
     if line.strip.start_with?("Subject:")
@@ -45,7 +45,7 @@ def read_email_content(file_path)
       content[:body] = line.strip.sub("Body:", "").strip
     end
   end
-  
+
   content
 end
 
@@ -114,7 +114,6 @@ def send_email(contact, smtp_config, email_content, sent_emails)
     puts "Error sending email to #{contact}: #{e.message}"
   end
 end
-
 
 # Send emails to contacts from the file
 def send_emails_from_file(file_path, smtp_config, email_content, sent_emails)
